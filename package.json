@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev": "astro dev --host",
-    "build": "astro check && NODE_OPTIONS=--max-old-space-size=8192 astro build",
+    "dev": "node init && astro dev --host",
+    "build": "node init && astro check && NODE_OPTIONS=--max-old-space-size=8192 astro build",
     "preview": "astro preview",
     "test": "vitest run"
   },
